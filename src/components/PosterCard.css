@@ -1,0 +1,28 @@
+.abstract {
+  text-align: justify;
+}
+
+.box1 {
+  display: grid;
+  grid-column: 1;
+  grid-row: 6;
+  grid-gap: 1em;
+  justify-content: center;
+  line-height: 1.7em;
+}
+.box2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-row: 5;
+  padding-top: 2em;
+  grid-gap: 1em;
+  justify-content: center;
+}
+a {
+  color: rgb(55, 55, 124);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 173, 21);
+}

@@ -1,0 +1,10 @@
+.spinner {
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  margin: auto;
+  display: block;
+}
+img {
+  width: 100%;
+}
