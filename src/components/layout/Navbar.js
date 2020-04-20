@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
+import "./Navbar.css";
 
 export default function Navbar({ onSearch }) {
   const [search, setSearch] = useState("");
@@ -28,7 +28,7 @@ export default function Navbar({ onSearch }) {
             onChange={handleChange}
             placeholder="Enter your search item.."
           />
-          <button type="submit" className="btn search btn-sm btn-success">
+          <button type="submit" className="search btn-sm btn-success">
             Search
           </button>
         </form>

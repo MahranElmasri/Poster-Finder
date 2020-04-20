@@ -56,7 +56,9 @@ export default function PosterCard(props) {
             <div>
               <b>Abstract: </b>
             </div>
-            <div className="abstract">{paper_abstract}</div>
+            <div className="abstract">
+              {paper_abstract ? paper_abstract : "Abstract not available !"}
+            </div>
             <div>
               <b>Author: </b>
             </div>

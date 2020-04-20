@@ -5,7 +5,7 @@
   --primary-color: #333333;
   --dark-color: #333333;
   --light-color: #cfcaca;
-  --danger-color: #f44336;
+  --danger-color: #f85c51;
   --success-color: #28a745;
 }
 
@@ -41,12 +41,9 @@ body {
   text-align: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-right {
+.btn-right {
   text-align: right;
+  margin: 1rem 2rem;
 }
 
 .text-left {
@@ -91,14 +88,6 @@ body {
   color: #fff;
 }
 
-.btn-danger,
-.bg-danger,
-.badge-danger,
-.alert-danger {
-  background: var(--danger-color);
-  color: #fff;
-}
-
 .btn-success,
 .bg-success,
 .badge-success,
@@ -107,13 +96,9 @@ body {
   color: #fff;
 }
 
-.btn-white,
-.bg-white,
-.badge-white,
-.alert-white {
-  background: #fff;
-  color: #333;
-  border: #ccc solid 1px;
+.btn-danger {
+  background: var(--danger-color);
+  color: #fff;
 }
 
 .btn:hover {

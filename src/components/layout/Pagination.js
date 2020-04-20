@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import "./pagination.css";
+import "./Pagination.css";
 
 export default function Pagination({ postsPerPage, totalPosts, paginate }) {
   const pageNumbers = [];

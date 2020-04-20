@@ -13,6 +13,7 @@ export default function Home(props) {
   const [poster, setPoster] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(10);
+  const [grid, setGrid] = useState(false);
 
   const fetchData = async query => {
     setLoading(true);
@@ -55,10 +56,33 @@ export default function Home(props) {
                 <Spinner />
               ) : (
                 <div>
+                  {currntPosts.length > 0 ? (
+                    <div>
+                      <button
+                        onClick={() => {
+                          setResult([]);
+                        }}
+                        className="btn-right btn btn-danger"
+                      >
+                        Clear
+                      </button>
+                      <button
+                        onClick={() => {
+                          setGrid(!grid);
+                        }}
+                        className="btn-right btn"
+                      >
+                        {grid ? "List View" : "Grid View"}
+                      </button>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                   <Posters
                     posters={currntPosts}
                     events={events}
                     users={users}
+                    grid={grid}
                   />
                   <Pagination
                     paginate={paginate}

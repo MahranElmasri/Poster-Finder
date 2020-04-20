@@ -17,7 +17,10 @@ export default function PosterItem({ poster, events, users }) {
 
   return (
     <div className="card border-light mb-3">
-      <div className="card-header">{title}</div>
+      <div className="card-header">
+        <b>Title: </b>
+        {title}
+      </div>
       <div className="card-body">
         <div className="card-title">
           <b>Author name: </b> <span>{author_names}</span>
@@ -26,7 +29,7 @@ export default function PosterItem({ poster, events, users }) {
           <b>Event: </b> {eventList}
         </div>
         <div>
-          <b>Date: </b>
+          <b>Uploaded: </b>
           {uploaded_at.split("T")[0]}
         </div>
         <div>
@@ -48,7 +51,7 @@ export default function PosterItem({ poster, events, users }) {
         </div>
       </div>
       <div className="card-footer">
-        <Link to={`/poster/:${id}`} className="btn btn-dark btn-sm my-1">
+        <Link to={`/poster/:${id}`} className="btn btn-success btn-sm my-1">
           {`More>>`}
         </Link>
       </div>
