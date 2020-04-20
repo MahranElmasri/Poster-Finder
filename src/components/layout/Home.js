@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./Home.css";
 import Navbar from "./Navbar";
 import Posters from "../Posters";
 import PosterCard from "../PosterCard";
